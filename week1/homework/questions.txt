@@ -29,4 +29,4 @@ Bundler manages the gem installations based on your Gemfile and it tells where t
 should go and it installs them into the RVM folder. 
 2-	REST (Representational State Transfer) is a software architecture style that consists of a set of architectural constraints applied to components, connectors and data elements. It is a web-based communication style, it lets the application to talk to servers in a unique fashion.
 3-	CRUD stands for Create/Read/Update/Delete. It is an abbreviation for database operations. 
-4-	Resource routing allows you to quickly declare all of the common routes for a given resourceful controller. Inste
+4-	Resource routing allows you to quickly declare all of the common routes for a given resourceful controller. Routes file. 

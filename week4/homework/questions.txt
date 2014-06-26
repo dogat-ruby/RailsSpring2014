@@ -1,0 +1,63 @@
+Reading:
+  Chapter 6: Sections 4-6
+  Chapter 7: All
+  Chapter 9: Section 1
+  Chapter 11: Sections 9-11
+
+Code:
+  Add 2 relationships to your app:
+    1. Has Many (one-to-many)
+    2. Has Many Through (many-to-many)
+  Add 2 named scopes
+
+Questions:
+1. What is ActiveRecord and why is it useful?
+2. What problems could happen if you change a migration file after you have run it and committed it to github? (list 2)
+3. What problems can you run into with the Rails has_and_belongs_to_many method? (list 2)
+4. How is Rails form_for object oriented?
+5. How would I use postgres in production and sqlite for development? What files would I change and how would I change them?
+6. What is the seeds file? How do I run it?
+
+1. What is ActiveRecord and why is it useful?
+Active Record is the M in MVC - the model - which is the layer of the system responsible for representing business data and logic. 
+It is useful because it automatially creates methods to allow Crud operations.
+
+2. What problems could happen if you change a migration file after you have run it and committed it to github? (list 2)
+We should never change the database migration file.
+
+3. What problems can you run into with the Rails has_and_belongs_to_many method? (list 2)
+I am not sure, Bethany told us to not use it. I believe the reason why is it doesn't set the through on the relation table and it might cause problems. 
+
+
+4. How is Rails form_for object oriented?
+
+Form_for creates a form that allows the user to create or update the attributes of a specific model object. Because form_for generates an appropriate form tag and yields a form builder object that knows the model the form is about and input fields are created by calling methods defined on the form builder, which means they are able to generate the appropriate names and default values corresponding to the model attributes, as well as convenient IDs, etc. (http://api.rubyonrails.org/)
+
+5. How would I use postgres in production and sqlite for development? What files would I change and how would I change them?
+
+By adding the database connection strings in the database.yml
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: test-postgres_development
+  pool: 5
+  username: test-postgres (or your username if PostgreSQL installed by Homebrew)
+  password:
+
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+
+6. What is the seeds file? How do I run it?
+
+It sets up the database environment. It helps to set up the new environment by replicating the current database setup. rake db:seed / rake db:setup
+
+
+
+Link to code on Github:
+<https://github.com/dogat-ruby/wanderer>
+<https://github.com/dogat-ruby/findit>

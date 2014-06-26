@@ -1,0 +1,12 @@
+Reading:
+Chapter 21: All
+Active Record Validations: (http://guides.rubyonrails.org/active_record_validations.html)
+
+Code:
+Add 2 spec controller tests and methods
+Add 1 validation to a model including code and test
+
+I added some simple tests
+
+<https://github.com/dogat-ruby/wanderer>
+<https://github.com/dogat-ruby/findit> no test on this one

@@ -1,0 +1,21 @@
+Reading:
+  Chapter 1 Config
+  Chapter 12 Haml
+  Chapter 15 Security
+
+Code:
+  Deploy your application to Heroku
+  Setup email on Heroku in production
+
+Questions:
+1. What is Haml and why do we use it?
+	The abbr stands for HTML Abstraction Markup Language. It is a lightweight markup language available for rails applications. It is being used by ruby developers because it easy to use and read which helps the rails development.
+
+2. What are the 3 biggest security concerns with a Rails Application?
+	forgery, injection and password protection. The passwords and environment parameters should be kept secure and not put online if they are important to keep hidden. Devise has some protection around it and utilizing Figaro and saving the passwords and environment parameters in application yaml (mailtrap_username and mailtrap_password is a good example) and send the parameters to the actual code instead of the real passwords help protecting the application and your credentials. 
+3. What is the easiest thing you can do to secure your Rails application?
+	Use gems that are out there and secure to use such as Devise. Having the protect_from_forgery in the application and using rails security gem are the easy ways that I can think of. 
+
+Code:
+<https://github.com/dogat-ruby/findit>
+<pin-my-location.heroku.com>

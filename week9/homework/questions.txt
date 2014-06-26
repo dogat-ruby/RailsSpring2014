@@ -1,0 +1,25 @@
+Come to class prepared to present your project.
+You should be ready to answer these questions:
+
+What 3 things would you have done differently with your project?
+
+	1- The application is very simple right now, I would I would have added more usability options such as enabling more fields, validations and more functionality
+	2- I would have had a nicer CSS 
+	3- I would have added more test 
+
+What 3 things do you want to add to your project?
+
+	1- I would like to turn it to a reminder app other than a journal app. So it would take the time you pin and set a timer and notifies the user beforehand 
+	2- I would like to add the ability to detect user’s location from ip
+	3- I would make it more mobile friendly app have the users group the locations
+
+What 3 things do you wish you knew when you started? 
+
+	1- Using MongoDB with Rails Apps and deploying apps on Heroku is a challenge. Using MongoDB itself is a challenge, because it is document based database, it is harder to understand how things work with Mongo. It is not as easy as a relational database such as PostgreSQL. 
+	2- I wish I knew routes better so that I didn’t need to struggle with pointing locations from users.
+	3- Importance of testing 
+
+What 3 things did you learn that I didn’t go over in class?
+	1- Kind of how to setup and use Mongoid, MongoHq and relationships with Mongo. 
+	2- I learned more tricks about routing the pages (user_location_path) 
+	3- I learned to work with location data and nested resources. 

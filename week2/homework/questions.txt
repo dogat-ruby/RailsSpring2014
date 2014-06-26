@@ -10,8 +10,14 @@ Create a view helper that will generate different content on your homepage based
 
 Questions:
 1. Why does a Rails app have routing? 
+Router organizes the URLs and dispatches them to a controller’s action. It generates the paths and urls so that you don’t need to hardcode them in your views. 
 2. How would you render the same view for two different controllers? (code example is fine)
-3. If you wanted to check a parameter before calling any controller action, what would you do? (code example is fine)
+I would use render to request a view from different controllers.  render “controller/action”
+you can root to the view as well. root to: ‘controller#action’
 
+3. If you wanted to check a parameter before calling any controller action, what would you do? (code example is fine)
+I would use before_action which is a built-in method available in rails controller. 
+    before_action :set_student, only: [:show, :edit, :update, :destroy]
 Link to code on Github:
-<please put the link to your code on github here> 
+<https://github.com/dogat-ruby/wanderer> 
+<https://github.com/dogat-ruby/findit>
